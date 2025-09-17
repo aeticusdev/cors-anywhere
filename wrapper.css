@@ -1,0 +1,279 @@
+/**
+ * @name diyacord
+ * @author @dr.scorpse
+ * @version 2
+ * @description A Theme for my Pookie Dookie Diya Ma'am <3
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('./base.css');
+
+/* customize things here */
+body {
+    /* font, using Quicksand from DiyaCord */
+    --font: 'Quicksand';
+
+    /* top left corner text from DiyaCord */
+    --corner-text: '';
+
+    /* sizes */
+    --gap: 12px; /* spacing between panels */
+    --divider-thickness: 3px; /* thickness from DiyaCord */
+
+    /* animation/transition options */
+    --animations: on;
+    --list-item-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* smoother transition from DiyaCord */
+    --dms-icon-svg-transition: 0.4s ease;
+    --unread-bar-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* from DiyaCord */
+    --moon-spin-transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1); /* from DiyaCord */
+    --icon-spin-transition: 1.2s cubic-bezier(0.4, 0, 0.2, 1); /* from DiyaCord */
+    --fade-in-transition: 0.5s ease-in; /* from DiyaCord */
+    --fade-out-transition: 0.5s ease-out; /* from DiyaCord */
+    --slide-in-transition: 0.5s ease-in-out; /* from DiyaCord */
+    --slide-out-transition: 0.5s ease-in-out; /* from DiyaCord */
+
+    /* top bar options */
+    --move-top-bar-buttons: off;
+    --custom-app-top-bar-height: 32px;
+
+    /* window controls */
+    --custom-window-controls: on;
+    --window-control-size: 14px;
+    --windows-nav: none; /* from DiyaCord */
+    --custom-nav: block; /* from DiyaCord */
+
+    /* dms button icon options */
+    --dms-icon: on;
+    --dms-icon-svg-url: url('icon.svg'); /* custom icon from DiyaCord */
+    --dms-icon-svg-size: auto; /* from DiyaCord */
+    --dms-icon-color-before: var(--text-4);
+    --dms-icon-color-after: var(--text-0);
+    --discord-icon: none; /* from DiyaCord */
+    --heart-icon: block; /* from DiyaCord */
+    --heart-icon-url: url('icon.svg'); /* from DiyaCord */
+    --heart-icon-size: auto; /* from DiyaCord */
+
+    /* dms button background options */
+    --dms-background: off;
+    --dms-background-image-url: url('');
+    --dms-background-image-size: cover;
+    --dms-background-color: linear-gradient(70deg, var(--bg-3), var(--bg-4), var(--bg-5));
+
+    /* background image options */
+    --background-image: on;
+    --background-image-url: url('https://media.discordapp.net/attachments/1325810406937071689/1378397262509506560/ezgif-6e45d8098b897f.gif?ex=683c73fc&is=683b227c&hm=87f8e5a252679a67a5c152e97c0ac219c63a5e255c49f0c5a81942a2465daff0&=&width=1920&height=1080');
+
+    /* transparency/blur options */
+    --transparency-tweaks: on;
+    --remove-bg-layer: off;
+    --panel-blur: on;
+    --blur-amount: 12px;
+    --bg-floating: var(--bg-3);
+    --panel-backdrop-filter: blur(var(--blur-amount));
+/* from DiyaCord */
+
+    /* chatbar options */
+    --flipped-chatbar: on;
+    --chatbar-height: 47px;
+    --chatbar-padding: 8px;
+
+    /* other options */
+    --small-user-panel: on;
+    
+    /* corner roundness from DiyaCord */
+    --roundness-xl: 30px;
+    --roundness-l: 25px;
+    --roundness-m: 20px;
+    --roundness-s: 15px;
+    --roundness-xs: 12px;
+    --roundness-xxs: 10px;
+    
+    /* spacing from DiyaCord */
+    --spacing: 16px;
+}
+
+/* color options */
+:root {
+    --colors: on;
+
+    /* text colors - using DiyaCord's purple theme */
+    --text-0: white;
+
+    --text-2: hsl(220, 25%, 75%);
+
+
+    --text-3: hsl(220, 15%, 65%);
+
+
+    --text-4: hsl(268, 15%, 45%);
+
+
+    --text-5: hsl(220, 15%, 30%);
+    
+    /* background and dark colors - using DiyaCord's dark theme */
+    --bg-1: hsla(0, 0%, 8%, 0.5);      /* 50% opacity */
+    --bg-2: hsla(240, 20%, 10%, 0.5);
+    --bg-3: hsla(240, 20%, 8%, 0.5);
+    --bg-4: hsla(240, 20%, 6%, 0.5);
+    --hover: hsla(240, 25%, 50%, 0.15);
+    --active: hsla(240, 25%, 50%, 0.25);
+    --active-2: hsla(240, 25%, 50%, 0.35);
+    --message-hover: hsla(240, 0%, 0%, 0.15);
+    /* ACCENTS */
+    /* accent colors - using DiyaCord's purple accents */
+
+
+    --accent-1: hsl(270, 80%, 70%);
+    --accent-2: hsl(278, 80%, 60%);
+    --accent-3: hsl(270, 80%, 50%);
+    --accent-4: hsl(270, 80%, 40%);
+    --accent-5: hsl(270, 80%, 30%);
+    
+    
+    --accent-new: var(--accent-2);
+    
+    /* MENTION HIGHLIGHT (glow-like) */
+    --mention: hsla(270, 90%, 60%, 0.1);
+
+
+    --mention-hover: hsla(270, 90%, 60%, 0.05);
+
+
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent);
+
+
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent);
+    
+    /* status indicator colors - from DiyaCord */
+    --online: #1fda6d;
+    --dnd: hsl(340, 60%, 60%);
+    --idle: hsl(50, 60%, 60%);
+    --streaming: hsl(260, 60%, 60%);
+    --offline: var(--text-4);
+
+    /* border colors */
+    --border-light: var(--hover);
+    --border: var(--active);
+    --button-border: hsl(270, 0%, 100%, 0.1);
+
+    /* base colors - adjusted to purple theme */
+    --red-1: oklch(76% 0.12 0);
+    --red-2: hsl(340, 60%, 60%);
+    --red-3: oklch(64% 0.12 0);
+    --red-4: oklch(58% 0.12 0);
+    --red-5: oklch(52% 0.12 0);
+
+    --green-1: oklch(76% 0.11 170);
+    --green-2: #1fda6d;
+    --green-3: oklch(64% 0.11 170);
+    --green-4: oklch(58% 0.11 170);
+    --green-5: oklch(52% 0.11 160);
+
+    --blue-1: hsl(270, 80%, 70%);
+    --blue-2: hsl(278, 80%, 60%);
+    --blue-3: hsl(270, 80%, 50%);
+    --blue-4: hsl(270, 80%, 40%);
+    --blue-5: hsl(270, 80%, 30%);
+
+    --yellow-1: oklch(80% 0.11 90);
+    --yellow-2: hsl(50, 60%, 60%);
+    --yellow-3: oklch(68% 0.11 90);
+    --yellow-4: oklch(62% 0.11 90);
+    --yellow-5: oklch(56% 0.11 90);
+
+    --purple-1: hsl(270, 80%, 70%);
+    --purple-2: hsl(260, 60%, 60%);
+    --purple-3: hsl(270, 80%, 50%);
+    --purple-4: hsl(270, 80%, 40%);
+    --purple-5: hsl(270, 80%, 30%);
+}
+
+/* font definitions */
+:root {
+    --font-primary: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-display: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* reduced motion */
+:root.reduce-motion {
+    --list-item-transition: none;
+    --unread-bar-transition: none;
+    --moon-spin-transition: none;
+    --icon-spin-transition: none;
+}
+
+:root {
+    container-name: root;
+    --custom-guild-list-padding: 12px;
+}
+/* Create a floating element for the text */
+:root::before {
+  content: var(--corner-text, 'DiyaCord');
+  position: fixed;
+  top: 4px;
+  left: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--font, 'Quicksand');
+  color: var(--accent-1);
+  z-index: 10000;
+  pointer-events: none;
+}
+.emojiPicker__21ea5 {
+  background-color: var(--bg-3) !important;
+  border-radius: var(--roundness-m) !important;
+  border: 1px solid var(--accent-5) !important;
+}
+.status__2f4f7[style*="--status-color: var(--online)"] {
+  box-shadow: 0 0 5px var(--online);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(31, 218, 109, 0.4); }
+  70% { box-shadow: 0 0 0 5px rgba(31, 218, 109, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(31, 218, 109, 0); }
+}
+.listItem__650eb {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.listItem__650eb:hover {
+  transform: scale(1.1);
+}
+/* Increased specificity using :root for bio text area */
+:root .bioTextArea__6a919 {
+  --channel-text-area-placeholder: var(--input-placeholder-text);
+  /* Use theme variable for roundness and ensure it applies */
+  border-radius: var(--roundness-m) !important; /* Updated from 3px and added !important */
+  height: 136px;
+  transition: border-color .2s ease-in-out;
+  /* Apply gradient background and ensure it applies */
+  background: linear-gradient(70deg, var(--accent-3), var(--accent-4), var(--accent-5)) !important; /* Reverted to gradient and added !important */
+  /* Ensure border is consistent or removed if desired */
+  border: none !important; /* Added to remove default border if necessary */
+}
+
+/* Increased specificity using :root for bio text area focus */
+:root .bioTextArea__6a919:focus-within {
+  /* Keep the focus style or adjust if needed */
+  border-color: var(--text-link) !important; /* Added !important */
+}
+
+.bioTextArea__6a919>div {
+  height: 100%;
+}
+/* Increased specificity using :root for visual-refresh bio text area container */
+:root .visual-refresh .bioTextAreaContainer__6a919 {
+  /* Apply gradient background and ensure it applies */
+  background: linear-gradient(70deg, var(--accent-3), var(--accent-4), var(--accent-5)) !important; /* Added !important */
+  /* Ensure border is consistent or removed if desired */
+  border: 1px solid var(--input-border) !important; /* Added !important, adjust if needed */
+  /* Use theme variable for roundness and ensure it applies */
+  border-radius: var(--roundness-m) !important; /* Added !important */
+}
+
+/* Increased specificity using :root for visual-refresh bio text area container focus */
+:root .visual-refresh .bioTextAreaContainer__6a919:focus-within {
+  border-color: var(--text-link) !important; /* Added !important */
+}
+
