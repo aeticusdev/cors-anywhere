@@ -111,14 +111,34 @@ body {
     --text-5: hsl(220, 15%, 30%);
     
     /* background and dark colors - using DiyaCord's dark theme */
-    --bg-1: hsl(0, 0%, 8%);      /* 50% opacity */
-    --bg-2: hsl(240, 22%, 10%);
-    --bg-3: hsl(240, 20%, 8%);
-    --bg-4: hsla(240, 20%, 6%, 0.5);
-    --hover: hsla(240, 25%, 50%, 0.15);
-    --active: hsla(240, 25%, 50%, 0.25);
-    --active-2: hsla(240, 25%, 50%, 0.35);
-    --message-hover: hsla(240, 0%, 0%, 0.15);
+    --bg-1: hsla(0, 0%, 8%, 0.74);      /* 50% opacity */
+    --bg-2: hsla(240, 22%, 10%, 0.842);
+    --bg-3: hsla(240, 20%, 8%, 0.808);
+    --bg-4: hsla(240, 20%, 6%, 0.719);
+    --hover: hsla(240, 25%, 50%, 0.247);
+    --active: hsla(240, 25%, 50%, 0.322);
+    --active-2: hsla(240, 25%, 50%, 0.425);
+    --message-hover: hsla(0, 0%, 0%, 0.445);
+
+    /* Apply backdrop-filter blur to background elements */
+    --bg-1-backdrop-filter: blur(var(--blur-amount));
+    --bg-2-backdrop-filter: blur(var(--blur-amount));
+    --bg-3-backdrop-filter: blur(var(--blur-amount));
+    --bg-4-backdrop-filter: blur(var(--blur-amount));
+    --hover-backdrop-filter: blur(var(--blur-amount));
+    --active-backdrop-filter: blur(var(--blur-amount));
+    --active-2-backdrop-filter: blur(var(--blur-amount));
+    --message-hover-backdrop-filter: blur(var(--blur-amount));
+
+    /* Adding blur effect */
+    --bg-1-filter: blur(4px);
+    --bg-2-filter: blur(4px);
+    --bg-3-filter: blur(4px);
+    --bg-4-filter: blur(4px);
+    --hover-filter: blur(4px);
+    --active-filter: blur(4px);
+    --active-2-filter: blur(4px);
+    --message-hover-filter: blur(4px);
     /* ACCENTS */
     /* accent colors - using DiyaCord's purple accents */
 
