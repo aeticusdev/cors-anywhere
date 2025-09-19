@@ -111,9 +111,9 @@ body {
     --text-5: hsl(220, 15%, 30%);
     
     /* background and dark colors - using DiyaCord's dark theme */
-    --bg-1: hsla(0, 0%, 8%, 0.5);      /* 50% opacity */
-    --bg-2: hsla(240, 20%, 10%, 0.5);
-    --bg-3: hsla(240, 20%, 8%, 0.5);
+    --bg-1: hsl(0, 0%, 8%);      /* 50% opacity */
+    --bg-2: hsl(240, 22%, 10%);
+    --bg-3: hsl(240, 20%, 8%);
     --bg-4: hsla(240, 20%, 6%, 0.5);
     --hover: hsla(240, 25%, 50%, 0.15);
     --active: hsla(240, 25%, 50%, 0.25);
